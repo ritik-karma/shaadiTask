@@ -1,6 +1,6 @@
 //
 //  mainView.swift
-//  shaadTask
+//  shaadiTask
 //
 //  Created by Ritik Karma on 23/06/24.
 //
@@ -9,18 +9,19 @@ import SwiftUI
 
 struct mainView: View {
     var body: some View {
+        
         NavigationStack{
             GeometryReader{ geometry in
-                
-                VStack {
+            VStack {
                     VStack{
                         TabView{
                             ForEach(0...3, id: \.self) { _ in
-                                Color(.gray)
+                                Color(.systemGray2)
                                 
                             }
                         }
-                        
+                        .ignoresSafeArea()
+                        .background(Color(.systemGray2))
                         .frame(width: geometry.size.width, height: geometry.size.height / 2)
                         .tabViewStyle(.page)
                         
@@ -29,7 +30,6 @@ struct mainView: View {
                     
                     
                     VStack {
-                        
                         VStack{
                             HStack{
                                 Text("Find you")
@@ -54,7 +54,7 @@ struct mainView: View {
                             VStack(spacing: 25){
                                 HStack(spacing: 10){
                                     Button{
-                                        //action for started button
+                                        //action for Get started button
                                     } label: {
                                         Text("Get Started \(Image(systemName: "arrow.up.right")) ")
                                             .font(.headline)
@@ -65,7 +65,7 @@ struct mainView: View {
                                             .cornerRadius(20)
                                     }
                                     Button{
-                                        
+                                        //Action for google signUp
                                     } label: {
                                         Image("google")
                                             .resizable()
@@ -78,7 +78,7 @@ struct mainView: View {
                                     
                                     
                                     Button{
-                                        
+                                        //Action for apple signUp
                                     } label: {
                                         Image("apple")
                                             .resizable()

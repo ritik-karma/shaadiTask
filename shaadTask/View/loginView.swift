@@ -1,6 +1,6 @@
 //
 //  loginView.swift
-//  shaadTask
+//  shaadiTask
 //
 //  Created by Ritik Karma on 23/06/24.
 //
@@ -22,7 +22,7 @@ struct loginView: View {
                    
             }
             .frame(maxWidth: .infinity, alignment: .leading)
-            .padding(.leading)
+            .padding(.leading, 35)
             
             HStack {
                 Text("+91")
@@ -37,9 +37,9 @@ struct loginView: View {
                     .background(Color(.systemGroupedBackground))
                     .cornerRadius(8)
                     .padding(.horizontal)
-                    .multilineTextAlignment(.leading) // Align text to leading within the TextField
+                    .multilineTextAlignment(.leading)
             }
-            .frame(width: 328, height: 50) // Set the desired width and height for the HStack
+            .frame(width: 328, height: 50) 
             .background(Color(.systemGroupedBackground))
             .cornerRadius(8)
             .padding(.vertical, 50)
@@ -57,7 +57,7 @@ struct loginView: View {
                     .cornerRadius(20)
             }
             Button{
-                
+                //
             } label: {
                 Text("Login Using Password")
                     .font(.headline)
@@ -68,7 +68,7 @@ struct loginView: View {
                     .cornerRadius(20)
             }
         }
-        .padding(.top, 120)
+        .padding(.top, 80)
         Spacer()
             
         
