@@ -48,12 +48,13 @@ struct mainView: View {
                             Text("join us and socialize with millions of meta humans")
                                 .font(.subheadline)
                                 .multilineTextAlignment(.center)
-                                .padding()
+                                .padding(.horizontal)
+                                .padding(.vertical, 5)
                             
                             VStack(spacing: 25){
                                 HStack(spacing: 10){
                                     Button{
-                                        //action for action button
+                                        //action for started button
                                     } label: {
                                         Text("Get Started \(Image(systemName: "arrow.up.right")) ")
                                             .font(.headline)
@@ -95,7 +96,7 @@ struct mainView: View {
                                         .font(.subheadline)
                                         .foregroundColor(Color(red: 0, green: 0, blue: 0).opacity(0.50))
                                     NavigationLink {
-                                        //MARK: Link to login view
+                                        loginView()
                                     } label: {
                                         Text("Log In")
                                             .font(.subheadline)
@@ -104,7 +105,7 @@ struct mainView: View {
                                  
                                 }
                             }
-                            .padding()
+                            .padding(.top, 40)
                         }
                         
                         

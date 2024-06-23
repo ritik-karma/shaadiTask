@@ -11,7 +11,7 @@ import SwiftUI
 struct shaadTaskApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            mainView()
         }
     }
 }
